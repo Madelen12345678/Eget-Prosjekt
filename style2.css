@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: darkslateblue;
+    color: aliceblue;
+
+}
+
+.banner2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    padding: 15px;
+    max-height: 70px;
+    background-color: hsla(176, 100%, 97%, 0.979);
+    width: 100%;
+    position: fixed;
+    border-bottom: rgba(212, 233, 253, 0.5) solid;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-variant: small-caps;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Playwrite";
+    padding: 10px;
+    color: darkslateblue;
+}
+
+.logo {
+    height: 60px;
+    width: 150px;
+}
+
+.burger-container {
+    position: relative;
+
+    display: none;
+}
+
+.burger,
+.close {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 25px;
+}
+
+h1 {
+    font-variant: small-caps;
+    font-size: 80px;
+}
+
+/* main1 */
+
+.main1 {
+    background-color: aliceblue;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    color: darkslateblue;
+}
+
+.journal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.diary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.pages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.top {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.top h3 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.story-link {
+    padding: 5px;
+    font-variant: small-caps;
+    background-color: antiquewhite;
+    border: navajowhite solid 1px;
+    border-radius: 5px;
+
+}
+
+.journal h2 {
+    font-variant: small-caps;
+    font-size: 60px;
+}

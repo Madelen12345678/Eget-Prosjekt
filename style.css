@@ -42,14 +42,15 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     gap: 100px;
-    padding: 10px;
+    padding: 15px;
     max-height: 70px;
-    background-color: hsla(208, 100%, 97%, 0.979);
+    background-color: hsla(176, 100%, 97%, 0.979);
     width: 100%;
     position: fixed;
+    border-bottom: rgba(212, 233, 253, 0.5) solid;
 }
 
-ul {
+.nav-links {
     display: flex;
     gap: 20px;
     list-style: none;
@@ -92,17 +93,29 @@ a {
     justify-self: center;
 }
 
-.head{
+.head {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: end;
+}
+
+.h1 {
+    padding: 30px;
+    background-color: hsla(208, 100%, 97%, 0.5);
+    max-width: 500px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
 
 .head h1 {
-    font-size: 50px;
+    font-size: 80px;
     font-variant: small-caps;
-    color: darkslateblue;
+    color: hsl(248, 39%, 39%);
+
 }
 
 /* section1 */
@@ -111,6 +124,7 @@ a {
 
     padding-top: 120px;
     padding-bottom: 120px;
+    margin-top: 400px;
 
 }
 
@@ -150,10 +164,8 @@ a {
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .about p {
@@ -163,7 +175,7 @@ a {
 
 
 .h2-prod {
-    
+
     font-size: 60px;
     text-align: center;
 
@@ -175,9 +187,15 @@ a {
     /* top: -200px; */
     opacity: 0;
     background-color: white;
-    border-top: solid  darkslateblue;
+    border-top: solid darkslateblue;
     padding: 15px;
     line-height: 1.5;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    flex: 1;
 }
 
 .product-info.active {
@@ -187,15 +205,103 @@ a {
     opacity: 1;
 }
 
-/* image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* section 2 */
+
+.main2 {
+    background-color: aliceblue;
+    padding-top: 100px;
+    padding-bottom: 150px;
 }
 
-image.en {
-    background-image: url(./media/field-shorts.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+.journal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.pages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.top {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.top h2 {
+    font-size: 30px;
+}
+
+.story-link {
+    padding: 5px;
+    font-variant: small-caps;
+    background-color: antiquewhite;
+    border: navajowhite solid 1px;
+    border-radius: 5px;
+
+}
+
+/* footer */
+
+footer {
+    background-color: aliceblue;
+    color: aliceblue;
+    
+
+.footer2 {
+    background-color: darkslateblue;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 100px;
+    
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot a {
+    color: aliceblue;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.media {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+
+
