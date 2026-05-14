@@ -41,6 +41,7 @@ nav {
     width: 100%;
     position: fixed;
     border-bottom: rgba(212, 233, 253, 0.5) solid;
+    z-index: 1;
 }
 
 .nav-links {
@@ -130,6 +131,7 @@ h1 {
 .top h3 {
     font-size: 30px;
     font-weight: 200;
+    border-bottom: solid darkslateblue 2px;
 }
 
 .story-link {
@@ -144,4 +146,44 @@ h1 {
 .journal h2 {
     font-variant: small-caps;
     font-size: 60px;
+}
+
+
+.box{
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+
+}
+
+.more{
+    position: absolute;
+    top: 0px;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.4s;
+    
+}
+.more.active{
+    opacity: 1;
+    transition: 0.4s;
+}
+
+img{
+    aspect-ratio: 5/7;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+img.active{
+    opacity: 0.5;
+    transition: 0.4s;
 }
